@@ -1,0 +1,23 @@
+#pragma once
+#ifndef TASK_HPP
+#define TASK_HPP
+
+#include <string>
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class Task{
+private:
+    string name;
+    int minuteToDo;
+    int hourToDO;
+    int dayToDo;
+    int monthToDo;
+    int yearToDo;
+publi
+       
+};
+
+#endif
