@@ -13,7 +13,7 @@ class thread
 {
 private:
 public:
-    thread(vector<Task>& tasks,int numberInVector);
+    Thread(vector<Task>& tasks,int numberInVector);
 
     int timer(int miliseconds);
     void notify(QString message);
