@@ -1,6 +1,6 @@
 #pragma once
-#ifndef THREAD_H
-#define THREAD_H
+#ifndef THREAD_HPP
+#define THREAD_HPP
 
 #include <QTimer>
 #include <string>
