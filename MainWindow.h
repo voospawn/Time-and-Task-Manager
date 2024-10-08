@@ -19,8 +19,12 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_TestButton_clicked();
-
+    void on_CreateTaskButton_clicked();
+    void on_EditTaskButton_clicked();
+    void on_CreateTaskButton_clicked();
+    void on_CreateTaskButton_clicked();
+    void on_CreateTaskButton_clicked();
+    void on_CreateTaskButton_clicked();
 private:
     std::vector<std::thread> workThreads;
     std::vector<std::thread> privateThreads;
