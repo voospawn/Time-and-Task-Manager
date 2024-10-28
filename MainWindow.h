@@ -2,6 +2,8 @@
 
 #include <QMainWindow>
 #include <thread>
+#include <QInputDialog>
+#include "TaskManager.hpp"
 
 using namespace std;
 
@@ -21,13 +23,17 @@ public:
 private slots:
     void on_CreateTaskButton_clicked();
     void on_EditTaskButton_clicked();
-    void on_CreateTaskButton_clicked();
-    void on_CreateTaskButton_clicked();
-    void on_CreateTaskButton_clicked();
-    void on_CreateTaskButton_clicked();
+    void on_DeleteTaskButton_clicked();
+    void on_FinishTaskButton_clicked();
+    void on_ChangeTaskImportanceButton_clicked();
+    void on_PauseTaskButton_clicked();
+    void on_DeleteFinishedTasksButton_clicked();
+    void on_ExitButton_clicked();
+
 private:
-    std::vector<std::thread> workThreads;
-    std::vector<std::thread> privateThreads;
-    std::vector<std::thread> studyingThreads;
+    TaskManager taskmanager;
+    vector<std::thread> workThreads;
+    vector<std::thread> privateThreads;
+    vector<std::thread> studyingThreads;
     Ui::MainWindow *ui;
 };

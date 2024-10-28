@@ -11,11 +11,11 @@ class Task{
 private:
     string name;
     int everyMinutesNotification;
-    int minuteToDo;
-    int hourToDo;
-    int dayToDo;
-    int monthToDo;
-    int yearToDo;
+    int minuteToDo = 00;
+    int hourToDo = 00;
+    int dayToDo = 1;
+    int monthToDo = 11;
+    int yearToDo = 2024;
     bool paused = false;
     bool notImportant = true; // deafult setting for imporance is not important
     bool mediumImportance = false; // for now there are only three importance levels, it may chcange in the future ~ voospawn

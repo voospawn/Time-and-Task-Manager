@@ -24,6 +24,7 @@ public:
     void setNotImportant(string name, int vectorNum);
     void setMediumImportance(string name, int vectorNum);
     void setImportant(string name, int vectorNum);
+    void setEveryMinutesNotification(string name, int vectorNum, int everyMinutesNotification);
     void startThread(int vectorNum, int numberInVector);
 
     const vector<Task>& getWorkTasks() const { return workTasks; }

@@ -146,6 +146,30 @@ void TaskManager::setMediumImportance(string name, int vectorNum){
         }
     }
 }
+void TaskManager::setEveryMinutesNotification(string name, int vectorNum, int everyMinutesNotification){
+  if(vectorNum == 0){
+      for(auto task = workTasks.begin(); task != workTasks.end(); ++task){
+          if(task->getName() == name){
+              task->setEveryMinutesNotification(everyMinutesNotification);
+              return;
+          }
+      }
+  }else if(vectorNum == 1){
+      for(auto task = privateTasks.begin(); task != privateTasks.end(); ++task){
+        if(task->getName() == name){
+            task->setEveryMinutesNotification(everyMinutesNotification);
+            return;
+        }
+      }
+  }else{
+      for(auto task = studyingTasks.begin(); task != studyingTasks.end(); ++task){
+        if(task->getName() == name){
+            task->setEveryMinutesNotification(everyMinutesNotification);
+            return;
+        }
+      }
+  }
+}
 
 void TaskManager::startThread(int vectorNum, int numberInVector){
     if(vectorNum == 0){

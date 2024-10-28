@@ -4,7 +4,6 @@
 
 #include <QTimer>
 #include <QString>
-#include <vector>
 #include "task.hpp"
 #include <QMessageBox>
 #include <QEventLoop>
