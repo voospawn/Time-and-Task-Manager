@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
         t.detach();
         studyingThreads.push_back(t);
     }
-
+//asdjkasdjdajhs
 }
 
 MainWindow::~MainWindow()
